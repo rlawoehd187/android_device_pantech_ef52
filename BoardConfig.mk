@@ -14,6 +14,10 @@
 
 -include device/pantech/msm8960-common/BoardConfigCommon.mk
 
+
+# ReleaseTools
+TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)/releasetools
+
 # inherit from the proprietary version
 -include vendor/pantech/ef52/BoardConfigVendor.mk
 

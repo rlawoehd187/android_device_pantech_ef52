@@ -36,7 +36,9 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 #PRODUCT_COPY_FILES += \
                        device/pantech/ef52/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
 
-# MSM8960/MPQ8064 firmware
+# Checking model
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/releasetools/device_check.sh:system/bin/device_check.sh
 
 # keylayout
 PRODUCT_COPY_FILES += \

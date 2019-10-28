@@ -1,4 +1,4 @@
-ifeq (ef52l,$(TARGET_DEVICE))
+ifeq (ef52,$(TARGET_DEVICE))
 
 LOCAL_PATH := $(call my-dir)
 

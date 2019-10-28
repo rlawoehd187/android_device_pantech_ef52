@@ -1,7 +1,7 @@
 #!/bin/sh
 
 VENDOR=pantech
-DEVICE=ef52l
+DEVICE=ef52
 
 BASE=../../../vendor/$VENDOR/$DEVICE/proprietary
 rm -rf $BASE/*

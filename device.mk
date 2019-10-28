@@ -16,9 +16,9 @@
 
 $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
-$(call inherit-product, vendor/pantech/ef52l/ef52l-vendor.mk)
+$(call inherit-product, vendor/pantech/ef52/ef52-vendor.mk)
 
-DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52l/overlay
+DEVICE_PACKAGE_OVERLAYS += device/pantech/ef52/overlay
 
 # Device uses high-density artwork where available
 PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
@@ -34,49 +34,49 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
 
 # audio UCM files
 #PRODUCT_COPY_FILES += \
-                       device/pantech/ef52l/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
+                       device/pantech/ef52/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
 
 # MSM8960/MPQ8064 firmware
 PRODUCT_COPY_FILES += \
-    device/pantech/ef52l/firmware/cyttsp_8064_mtp.hex:/system/etc/firmware/cyttsp_8064_mtp.hex \
-    device/pantech/ef52l/firmware/cyttsp_8960_cdp.hex:/system/etc/firmware/cyttsp_8960_cdp.hex \
-    device/pantech/ef52l/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
-    device/pantech/ef52l/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
-    device/pantech/ef52l/firmware/vidc_1080p.fw:/system/etc/firmware/vidc_1080p.fw \
-    device/pantech/ef52l/firmware/vidc.b00:/system/etc/firmware/vidc.b00 \
-    device/pantech/ef52l/firmware/vidc.b01:/system/etc/firmware/vidc.b01 \
-    device/pantech/ef52l/firmware/vidc.b02:/system/etc/firmware/vidc.b02 \
-    device/pantech/ef52l/firmware/vidc.b03:/system/etc/firmware/vidc.b03 \
-    device/pantech/ef52l/firmware/vidcfw.elf:/system/etc/firmware/vidcfw.elf \
-    device/pantech/ef52l/firmware/vidc.mdt:/system/etc/firmware/vidc.mdt \
-    device/pantech/ef52l/firmware/libpn544_fw.so:/system/vendor/firmware/libpn544_fw.so \
+    device/pantech/ef52/firmware/cyttsp_8064_mtp.hex:/system/etc/firmware/cyttsp_8064_mtp.hex \
+    device/pantech/ef52/firmware/cyttsp_8960_cdp.hex:/system/etc/firmware/cyttsp_8960_cdp.hex \
+    device/pantech/ef52/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
+    device/pantech/ef52/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
+    device/pantech/ef52/firmware/vidc_1080p.fw:/system/etc/firmware/vidc_1080p.fw \
+    device/pantech/ef52/firmware/vidc.b00:/system/etc/firmware/vidc.b00 \
+    device/pantech/ef52/firmware/vidc.b01:/system/etc/firmware/vidc.b01 \
+    device/pantech/ef52/firmware/vidc.b02:/system/etc/firmware/vidc.b02 \
+    device/pantech/ef52/firmware/vidc.b03:/system/etc/firmware/vidc.b03 \
+    device/pantech/ef52/firmware/vidcfw.elf:/system/etc/firmware/vidcfw.elf \
+    device/pantech/ef52/firmware/vidc.mdt:/system/etc/firmware/vidc.mdt \
+    device/pantech/ef52/firmware/libpn544_fw.so:/system/vendor/firmware/libpn544_fw.so \
 # keylayout
 PRODUCT_COPY_FILES += \
-	device/pantech/ef52l/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
-	device/pantech/ef52l/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
-	device/pantech/ef52l/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-	device/pantech/ef52l/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-	device/pantech/ef52l/keylayout/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
-	#device/pantech/ef52l/keylayout/stmicro_fts_ts.kl:system/usr/keylayout/stmicro_fts_ts.kl \
-	#device/pantech/ef52l/keylayout/atmel_mxt_540s.kl:system/usr/keylayout/atmel_mxt_540s.kl \
+	device/pantech/ef52/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+	device/pantech/ef52/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
+	device/pantech/ef52/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+	device/pantech/ef52/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
+	device/pantech/ef52/keylayout/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
+	#device/pantech/ef52/keylayout/stmicro_fts_ts.kl:system/usr/keylayout/stmicro_fts_ts.kl \
+	#device/pantech/ef52/keylayout/atmel_mxt_540s.kl:system/usr/keylayout/atmel_mxt_540s.kl \
 
 
 # keychars
 PRODUCT_COPY_FILES += \
-	device/pantech/ef52l/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
-	device/pantech/ef52l/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
-	device/pantech/ef52l/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
-	device/pantech/ef52l/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
+	device/pantech/ef52/keychars/Generic.kcm:system/usr/keychars/Generic.kcm \
+	device/pantech/ef52/keychars/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
+	device/pantech/ef52/keychars/qwerty.kcm:system/usr/keychars/qwerty.kcm \
+	device/pantech/ef52/keychars/Virtual.kcm:system/usr/keychars/Virtual.kcm
 
 # idc
 PRODUCT_COPY_FILES += \
-	device/pantech/ef52l/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
-	device/pantech/ef52l/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+	device/pantech/ef52/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+	device/pantech/ef52/idc/qwerty.idc:system/usr/idc/qwerty.idc \
      
 
 PRODUCT_COPY_FILES += \
-	device/pantech/ef52l/thermald/thermald-8064_ef52.conf:system/etc/thermald.conf \
-	device/pantech/ef52l/thermald/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf
+	device/pantech/ef52/thermald/thermald-8064_ef52.conf:system/etc/thermald.conf \
+	device/pantech/ef52/thermald/thermal-engine-8064.conf:system/etc/thermal-engine-8064.conf
 
 PRODUCT_PACKAGES += \
     Torch
@@ -86,25 +86,13 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 #Copy kernel header if using prebuilt kernel
 #ifneq ($(OUT),)
-#$(call inherit-product, vendor/pantech/ef52l/prebuilt_module.mk)
+#$(call inherit-product, vendor/pantech/ef52/prebuilt_module.mk)
 #$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
 #    mkdir -p $(OUT)/obj;\
-#    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52l/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
+#    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
 #endif
 
-#Product info
-ifdef AICP_ROM
-PRODUCT_PROPERTY_OVERRIDES += \
-	ro.device.chipset=APQ8064T \
-	ro.device.gpu=Adreno-320 \
-	ro.device.front_cam=2Mpx \
-	ro.device.rear_cam=13Mpx \
-	ro.device.screen_res=720x1280 \
-	ro.aicp.maintainer=Lê_Hoàng<l.hoang87@live.com>
-endif
-
-
-#$(shell  cp -f $(ANDROID_BUILD_TOP)/device/pantech/ef52l/vibrator/vibrator.c $(ANDROID_BUILD_TOP)/hardware/libhardware_legacy/vibrator/vibrator.c);
+#$(shell  cp -f $(ANDROID_BUILD_TOP)/device/pantech/ef52/vibrator/vibrator.c $(ANDROID_BUILD_TOP)/hardware/libhardware_legacy/vibrator/vibrator.c);
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)

@@ -15,5 +15,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/full_ef52l.mk \
-    $(LOCAL_DIR)/omni_ef52l.mk
+    $(LOCAL_DIR)/full_ef52.mk

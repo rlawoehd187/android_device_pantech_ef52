@@ -15,7 +15,7 @@
 -include device/pantech/msm8960-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/pantech/ef52l/BoardConfigVendor.mk
+-include vendor/pantech/ef52/BoardConfigVendor.mk
 
 TARGET_KERNEL_SOURCE := kernel/pantech/msm8960
 TARGET_KERNEL_CONFIG := Hiru_ef52_defconfig
@@ -26,13 +26,13 @@ BOARD_SYSTEMIMAGE_PARTITION_SIZE := 1782579200 #1.7GB
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 27577531392 #25.7GB
 BOARD_FLASH_BLOCK_SIZE := 131072
 
-TARGET_OTA_ASSERT_DEVICE := ef52l,ef52s,ef52k
+TARGET_OTA_ASSERT_DEVICE := ef52l,ef52s,ef52k,ef52
 
 # LightHAL
 TARGET_PROVIDES_LIBLIGHT 			:= true
 
 # Bluetooth
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/pantech/ef52l/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/pantech/ef52/bluetooth
 
 #Sensor
 EF52_USE_KITKAT_SENSORS := yes

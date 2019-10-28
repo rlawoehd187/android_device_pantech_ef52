@@ -1,9 +1,7 @@
 #
-# system.prop for ef52l
+# system.prop for ef52
 #
-ro.rom.author=Lê Hoàng
-#
-#
+
 rild.libpath=/system/lib/libril-qc-qmi-1.so
 rild.libargs=-d /dev/smd0
 ro.baseband.arch=mdm
@@ -43,9 +41,9 @@ persist.qcril.disable_retry = false
 #to display only once. even silent reset
 ril.data.bootingpopup=0
 # default local
-persist.sys.timezone=Asia/Bangkok
-persist.sys.language=vi
-persist.sys.region=VN
-persist.sys.country=VN
+persist.sys.timezone=Asia/Korean
+persist.sys.language=ko
+persist.sys.region=KR
+persist.sys.country=KR
 #changed data connection to disconnection as soon as entering no-service
 persist.telephony.oosisdc=false

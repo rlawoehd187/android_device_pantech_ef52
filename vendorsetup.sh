@@ -14,11 +14,6 @@
 # limitations under the License.
 #
 
-add_lunch_combo cm_ef52l-userdebug
-add_lunch_combo cm_ef52l-eng
-
-add_lunch_combo cm_ef52l-user
-
-#AICP
-add_lunch_combo aicp_ef52l-userdebug
-add_lunch_combo aicp_ef52l-eng
+add_lunch_combo cm_ef52-userdebug
+add_lunch_combo cm_ef52-eng
+add_lunch_combo cm_ef52-user

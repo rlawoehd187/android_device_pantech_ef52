@@ -37,19 +37,7 @@ PRODUCT_AAPT_PREF_CONFIG := xhdpi
                        device/pantech/ef52/snd_soc_msm/snd_soc_msm_2x_Fusion3:system/etc/snd_soc_msm/snd_soc_msm_2x_Fusion3 \
 
 # MSM8960/MPQ8064 firmware
-PRODUCT_COPY_FILES += \
-    device/pantech/ef52/firmware/cyttsp_8064_mtp.hex:/system/etc/firmware/cyttsp_8064_mtp.hex \
-    device/pantech/ef52/firmware/cyttsp_8960_cdp.hex:/system/etc/firmware/cyttsp_8960_cdp.hex \
-    device/pantech/ef52/firmware/leia_pfp_470.fw:/system/etc/firmware/leia_pfp_470.fw \
-    device/pantech/ef52/firmware/leia_pm4_470.fw:/system/etc/firmware/leia_pm4_470.fw \
-    device/pantech/ef52/firmware/vidc_1080p.fw:/system/etc/firmware/vidc_1080p.fw \
-    device/pantech/ef52/firmware/vidc.b00:/system/etc/firmware/vidc.b00 \
-    device/pantech/ef52/firmware/vidc.b01:/system/etc/firmware/vidc.b01 \
-    device/pantech/ef52/firmware/vidc.b02:/system/etc/firmware/vidc.b02 \
-    device/pantech/ef52/firmware/vidc.b03:/system/etc/firmware/vidc.b03 \
-    device/pantech/ef52/firmware/vidcfw.elf:/system/etc/firmware/vidcfw.elf \
-    device/pantech/ef52/firmware/vidc.mdt:/system/etc/firmware/vidc.mdt \
-    device/pantech/ef52/firmware/libpn544_fw.so:/system/vendor/firmware/libpn544_fw.so \
+
 # keylayout
 PRODUCT_COPY_FILES += \
 	device/pantech/ef52/keylayout/AVRCP.kl:system/usr/keylayout/AVRCP.kl \

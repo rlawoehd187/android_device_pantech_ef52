@@ -16,7 +16,7 @@
 
 
 # ReleaseTools
-TARGET_RELEASETOOLS_EXTENSIONS := $(PLATFORM_PATH)/releasetools
+TARGET_RELEASETOOLS_EXTENSIONS := device/pantech/ef52/releasetools
 
 # inherit from the proprietary version
 -include vendor/pantech/ef52/BoardConfigVendor.mk

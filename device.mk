@@ -46,10 +46,7 @@ PRODUCT_COPY_FILES += \
 	device/pantech/ef52/keylayout/Generic.kl:system/usr/keylayout/Generic.kl \
 	device/pantech/ef52/keylayout/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
 	device/pantech/ef52/keylayout/qwerty.kl:system/usr/keylayout/qwerty.kl \
-	device/pantech/ef52/keylayout/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl \
-	#device/pantech/ef52/keylayout/stmicro_fts_ts.kl:system/usr/keylayout/stmicro_fts_ts.kl \
-	#device/pantech/ef52/keylayout/atmel_mxt_540s.kl:system/usr/keylayout/atmel_mxt_540s.kl \
-
+	device/pantech/ef52/keylayout/apq8064-tabla-snd-card_Button_Jack.kl:system/usr/keylayout/apq8064-tabla-snd-card_Button_Jack.kl 
 
 # keychars
 PRODUCT_COPY_FILES += \
@@ -62,7 +59,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
 	device/pantech/ef52/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
 	device/pantech/ef52/idc/qwerty.idc:system/usr/idc/qwerty.idc \
-     
 
 PRODUCT_COPY_FILES += \
 	device/pantech/ef52/thermald/thermald-8064_ef52.conf:system/etc/thermald.conf \
@@ -73,16 +69,6 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=300
-
-#Copy kernel header if using prebuilt kernel
-#ifneq ($(OUT),)
-#$(call inherit-product, vendor/pantech/ef52/prebuilt_module.mk)
-#$(shell rm -rf $(OUT)/obj/KERNEL_OBJ;\
-#    mkdir -p $(OUT)/obj;\
-#    ln -s $(ANDROID_BUILD_TOP)/device/pantech/ef52/include/KERNEL_OBJ $(OUT)/obj/KERNEL_OBJ)
-#endif
-
-#$(shell  cp -f $(ANDROID_BUILD_TOP)/device/pantech/ef52/vibrator/vibrator.c $(ANDROID_BUILD_TOP)/hardware/libhardware_legacy/vibrator/vibrator.c);
 
 # call dalvik heap config
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)

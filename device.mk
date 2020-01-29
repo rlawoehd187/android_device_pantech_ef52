@@ -70,8 +70,5 @@ PRODUCT_PACKAGES += \
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=300
 
-# call dalvik heap config
-$(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
-
 # Inherit from msm8974-common
 $(call inherit-product, device/pantech/msm8960-common/msm8960.mk)
